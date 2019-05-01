@@ -1,0 +1,30 @@
+<?php
+include_once "../MongoDB.php";
+
+$u = $_GET['username'];
+$p = $_GET['password'];
+
+$obj = new MongoDBConnection();
+$res = $obj->getStudentAuth($u,$p);
+
+var_dump($res);
+
+/*
+$obj = new Mysql();
+
+$res = $obj->getAuthenticated($u,$p);
+
+if(session_status()==1){
+    session_start();
+}
+
+if($res=="FALSE"){
+    echo "FALSE";
+}else{
+    $res = explode("###",$res);
+    $_SESSION['NAME'] = $res[0];
+    $_SESSION['CLASS'] = $res[1];
+    echo "TRUE";
+}*/
+
+?>
