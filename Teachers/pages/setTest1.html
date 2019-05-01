@@ -1,0 +1,374 @@
+<center>
+    <div style="width:80vw;min-height:80vh;">
+        <div id="accordion" style="min-height:80vh;">
+            <h2 class="subject">Select Subject</h2>
+            <div class="subject">
+                <div class="form-group">
+                    <div class="com-sm-10">
+                        <div class="input-group mb-3" style="width: 500px;">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="subjectList">Subject</label>
+                            </div>
+                            <select class="custom-select" name="subject" id="subjectList">
+                                <option value="0">Select Subject</option>
+                                <option value="Discrete Mathematics">Discrete Mathematics</option>
+                                <option value="Digital Electronics and Logic Design">Digital Electronics and Logic
+                                    Design</option>
+                                <option value="Data Structure and Algorithm">Data Structure and Algorithm</option>
+                                <option value="Computer Organization and Architecture">Computer Organization and
+                                    Architecture</option>
+                                <option value="Object Oriented Programming">Object Oriented Programming</option>
+                                <option value="Engineering Mathematics III">Engineering Mathematics III</option>
+                                <option value="Computer Graphics">Computer Graphics</option>
+                                <option value="Advanced Data Structure">Advanced Data Structure</option>
+                                <option value="Microprocessor">Microprocessor</option>
+                                <option value="Principles of Programming Languages">Principles of Programming Languages</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="com-sm-10">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Description</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Enter Description" id="description" aria-label="Description" aria-describedby="basic-addon1">
+                          </div>
+                    </div>
+                </div>
+                <button class="btn btn-success" onclick="setSubject()">Set Subject</button>                    
+                <br/><b id="A">DONE</b>
+            </div>
+            <h2 class="timer" style="">Set Timer For Test</h2>
+            <div class="timer" style="">
+                <div class="setTime">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" name="hour" id="hour">
+                                        <option value="00">00</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                    </select>
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="hour">hr</label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" name="minute" id="minute">
+                                        <option value="00">00</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        <option value="32">32</option>
+                                        <option value="33">33</option>
+                                        <option value="34">34</option>
+                                        <option value="35">35</option>
+                                        <option value="36">36</option>
+                                        <option value="37">37</option>
+                                        <option value="38">38</option>
+                                        <option value="39">39</option>
+                                        <option value="40">40</option>
+                                        <option value="41">41</option>
+                                        <option value="42">42</option>
+                                        <option value="43">43</option>
+                                        <option value="44">44</option>
+                                        <option value="45">45</option>
+                                        <option value="46">46</option>
+                                        <option value="47">47</option>
+                                        <option value="48">48</option>
+                                        <option value="49">49</option>
+                                        <option value="50">50</option>
+                                        <option value="51">51</option>
+                                        <option value="52">52</option>
+                                        <option value="53">53</option>
+                                        <option value="54">54</option>
+                                        <option value="55">55</option>
+                                        <option value="56">56</option>
+                                        <option value="57">57</option>
+                                        <option value="58">58</option>
+                                        <option value="59">59</option>
+                                    </select>
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="minute">min</label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" name="second" id="second">
+                                        <option value="00">00</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        <option value="32">32</option>
+                                        <option value="33">33</option>
+                                        <option value="34">34</option>
+                                        <option value="35">35</option>
+                                        <option value="36">36</option>
+                                        <option value="37">37</option>
+                                        <option value="38">38</option>
+                                        <option value="39">39</option>
+                                        <option value="40">40</option>
+                                        <option value="41">41</option>
+                                        <option value="42">42</option>
+                                        <option value="43">43</option>
+                                        <option value="44">44</option>
+                                        <option value="45">45</option>
+                                        <option value="46">46</option>
+                                        <option value="47">47</option>
+                                        <option value="48">48</option>
+                                        <option value="49">49</option>
+                                        <option value="50">50</option>
+                                        <option value="51">51</option>
+                                        <option value="52">52</option>
+                                        <option value="53">53</option>
+                                        <option value="54">54</option>
+                                        <option value="55">55</option>
+                                        <option value="56">56</option>
+                                        <option value="57">57</option>
+                                        <option value="58">58</option>
+                                        <option value="59">59</option>
+                                    </select>
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="second">sec</label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <button class="btn btn-success" onclick="setTimer()">Set Timer</button><br/><b id="B">DONE</b>
+            </div>
+            <h2 class="stulist" style="">Add List of Students</h2>
+            <div class="stulist" style="">
+                <div style="border-style: solid;border-width: 2px;margin-bottom: 5px;">
+                    <h5><u>Steps to insert File</u></h5>
+                    <ul>
+                        <li>Download the following <a href="./StudentListTemplate.xlsx" download style="text-decoration: underline;"> Template File </a></li>
+                        <li>Insert the data According to the Column Name</li>
+                        <li>If a  PRN Number is missing then add a tentative PRN Number</li>
+                        <li>Then Upload the Excel Sheet</li>
+                    </ul>
+                </div>
+                <button onclick="$('#STUDENTLIST:hidden').click()">Browse...</button><span id="Y">No File Selected</span>
+                <button class="btn btn-success" onclick="setStudents()">Set Students</button><br/><b id="C">DONE</b>
+            </div>
+            <h2 class="quelist" style="">Add List of Questions</h2>
+            <div class="quelist" style="">
+                <div style="border-style: solid;border-width: 2px;margin-bottom: 5px;">
+                    <h5><u>Steps to insert File</u></h5>
+                    <ul>
+                        <li>Download the following <a href="./QuestionListTemplate.xlsx" download style="text-decoration: underline;"> Template File </a></li>
+                        <li>Insert the data According to the Column Name</li>
+                        <li>Then Upload the Excel Sheet</li>
+                        <li><b>The Answer must only contain values 1/2/3/4</b></li>
+                    </ul>
+                </div>
+                <button onclick="$('#QUESTIONLIST:hidden').click()">Browse...</button><span id="Z">No File Selected</span>
+                <button class="btn btn-success" onclick="setTest()">Set Questions</button><br/><b style="color:green;" class="glyphicon glyphicon-ok" id="D">DONE</b>
+            </div>
+        </div>
+        <form action="./setTest.php" onsubmit="validate()" method="post" enctype="multipart/form-data">
+            <input type="text" name="SUBJECTNAME" id="SUBJECTNAME" hidden>
+            <input type="text" name="DESCRIPTION" id="DESCRIPTION" hidden>
+            <input type="text" name="TIMER" id="TIMER" hidden>
+            <input type="file" name="STUDENTLIST" id="STUDENTLIST"  accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" hidden>
+            <input type="file" name="QUESTIONLIST" id="QUESTIONLIST" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" hidden>
+            <button type="submit" class="btn btn-success"><h3>Set Test</h3></button>
+        </form>
+    </div>
+</center>
+
+<script>
+    function validate(){
+        alert($('#STUDENTLIST').val());
+        return true;
+    }
+	function exportToExcel(tableID,fileName='')
+		{
+			var downloadLink;
+			var dataType = 'application/vnd.ms-excel';
+			var tableSelect = document.getElementById(tableID);
+	    		var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+	    		fileName = fileName?fileName+'.xls':'excel_data.xls';
+	    		
+			downloadLink = document.createElement("a");
+			
+			document.body.appendChild(downloadLink);
+			    
+			if(navigator.msSaveOrOpenBlob)
+			{
+				var blob = new Blob(['\ufeff', tableHTML], {
+					type: dataType
+				});
+				navigator.msSaveOrOpenBlob( blob, fileName);
+			}
+			else
+			{
+				// Create a link to the file
+				downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+			    
+				// Setting the file name
+				downloadLink.download = fileName;
+				
+				//triggering the function
+				downloadLink.click();
+			}
+		}
+
+    var sub="";
+    function setSubject(){
+        sub=$('#subjectList').val();
+        desc = $('#description').val();
+        if(sub=='0'){
+            alert('Please select a Subject');
+            return;
+        }
+        if(desc){
+
+        }else{
+            alert('Please Enter a Description');
+            return;
+        }
+        $('#DESCRIPTION').val(desc);
+        $('#SUBJECTNAME').val(sub);
+        $('#A').show();
+    }
+
+    var timer='';
+    var id="";
+    function setTimer(){
+        timer = (parseInt($('#hour').val())*3600)+(parseInt($('#minute').val())*60)+(parseInt($('#second').val()));
+        if(timer<=0){
+            alert('Please select a valid Timer');
+            return false;
+        }else{
+            $('#TIMER').val(timer);
+            $('#B').show();
+        }
+    }
+
+    function setStudents(){
+        $('#C').show();
+    }
+
+    function setTest(){
+        $('#D').show();
+    }
+
+    $(function () {
+        $("#accordion").accordion({
+            collapsible: true,
+            heightStyle: "content",
+        });
+    });
+    
+    $(document).ready(function () {
+        $('#A').hide();$('#B').hide();$('#C').hide();$('#D').hide();
+        $('.ip').focusin(function () {
+            if ($('#first').val() == "") {
+                $('#first').focus();
+            }
+        });
+        $('.ip1').focusin(function () {
+            if ($('#first1').val() == "") {
+                $('#first1').focus();
+            }
+        });
+        $('#QUESTIONLIST:hidden').change(function(){
+            val = $('#QUESTIONLIST:hidden').val();
+            idx = val.lastIndexOf("\\");
+            idx = val.substring(idx+1,val.length);
+            $("#Z").html(idx);
+        });
+        $('#STUDENTLIST:hidden').change(function(){
+            val = $('#STUDENTLIST:hidden').val();
+            idx = val.lastIndexOf("\\");
+            idx = val.substring(idx+1,val.length);
+            $("#Y").html(idx);
+        });
+    });
+</script>
